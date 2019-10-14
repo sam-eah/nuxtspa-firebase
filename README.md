@@ -3,7 +3,8 @@
 The easiest way to create and deploy to firebase a nuxt app
 
 # Requirements
-npm or yarn
+- A Firebase project
+- npm or yarn
 
 # Setup
 First let's look at what we have to setup. These are things you only need to do once.
