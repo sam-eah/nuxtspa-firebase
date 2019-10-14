@@ -39,13 +39,16 @@ On linux you may have to use `sudo` everytime you use `yarn`.
 Once you made sure everything is fine, close the local server (`ctrl + c`)
 
 ## 2. Setup Firebase
-First let's go back to the project directory, install firebase-tools, login and init  
-In my case I will add Hosting only (you can add other things later)
+install firebase-tools if you haven't already
 ```console
-# install firebase-tools if you haven't already
 $ npm i -g firebase-tools
-# login if you are not connected
+```
+login if you are not connected
+```console
 $ firebase login
+```
+Then init, in my case I will add Hosting only (you can add other things later)
+```console
 $ firebase init
 
      ######## #### ########  ######## ########     ###     ######  ########
