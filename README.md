@@ -104,7 +104,7 @@ $ yarn build
 ```
 This will build the `/dist` directory    
 If you want, you can add this step in the `predeploy` script inside `hosting` in `firebase.json` like this :
-```
+```json
 {
   "hosting": {
     "predeploy": [
