@@ -60,7 +60,7 @@ $ firebase init
 
 You're about to initialize a Firebase project in this directory:
 
-  C:\Users\sx0xs\Documents\Workplace\nuxt-spa
+  \nuxtspa-firebase
 
 ? Are you ready to proceed? Yes
 ? Which Firebase CLI features do you want to set up for this folder? 
@@ -74,8 +74,8 @@ You can create multiple project aliases by running firebase use --add,
 but for now we'll just set up a default project.
 
 ? Please select an option: Use an existing project
-? Select a default Firebase project for this directory: bary-the-app (bary-the-app)
-i  Using project bary-the-app (bary-the-app)
+? Select a default Firebase project for this directory: <your firebase project>
+i  Using project <your firebase project>
 
 === Hosting Setup
 
