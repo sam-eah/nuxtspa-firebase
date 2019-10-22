@@ -134,4 +134,5 @@ $ firebase deploy
 ```
 
 # Conclusion 
-That was fast, right ? However this doesn't use Nuxt and Firebase to their full potential (ssr -nuxt universal mode- with firebase functions).
+That was fast, right ? However this doesn't use Nuxt and Firebase full potentials: nuxt ssr (universal mode) with firebase functions.  
+Find more here: https://github.com/sam-eah/nuxtssr-firebase
