@@ -7,11 +7,9 @@ The easiest way to create and deploy to firebase a nuxt app
 - npm or yarn
 
 # Setup
-First let's look at what we have to setup. These are things you only need to do once.
+(These are the things we will only need to do once.)
 ## 1. Create Nuxt App
-Into your project directory, run nuxt cli.  
-In my case I'm using vs code's terminal  
-You can see my setup below, I recommend you not to use eslint at this point (if you don't want to start by fixing all kinds of issues)
+Let's run nuxt cli into our project directory. (In my case I'm using vs code's terminal)
 ```console
 $ npx create-nuxt-app
 npx : 350 installé(s) en 32.227s
@@ -32,23 +30,23 @@ create-nuxt-app v2.11.1
 
 🎉  Successfully created project nuxt-spa
 ```  
-Afterwards, make sure dev mode is working
+Afterwards, let's make sure dev mode is working
 ```console
 $ yarn dev
 ```
-On linux you may have to use `sudo` everytime you use `yarn`.  
-Once you made sure everything is fine, close the local server (`ctrl + c`)
+*On linux you may have to use `sudo` everytime you use `yarn`.*  
+Once we made sure everything is fine, we can close the local server (`ctrl + c`)
 
 ## 2. Setup Firebase
-install firebase-tools if you haven't already
+Install firebase-tools if you haven't already
 ```console
 $ npm i -g firebase-tools
 ```
-login if you are not connected
+Login if you are not connected
 ```console
 $ firebase login
 ```
-Then init, in my case I will add Hosting only (you can add other things later)
+Then let's run firebase cli, we will need Hosting only
 ```console
 $ firebase init
 
@@ -96,14 +94,14 @@ You have now a `/functions` and a `/public` folder
 
 
 # Deploy
-Now that we setup everything, let's focus on what we need to do everytime we want to deploy
+(The things we have to do before each deployment)
 ## 1. Build  
 Always build your changes before deploying  
 ```console
 $ yarn build
 ```
 This will build the `/dist` directory    
-If you want, you can add this step in the `predeploy` script inside `hosting` in `firebase.json` like this :
+We can implement this step into the `predeploy` script inside `hosting` (in `firebase.json`)
 ```json
 {
   "hosting": {
@@ -125,13 +123,13 @@ If you want, you can add this step in the `predeploy` script inside `hosting` in
   }
 }
 ```
-This way, it will build automatically everytime you want to deploy
+This way, it will build automatically everytime we want to deploy!
 
 ## 2. Deploy !
-If everything went right, you now simply need to run `firebase deploy` !
 ```console
 $ firebase deploy
 ```
+That's it!
 
 # Conclusion 
 That was fast, right ? However this doesn't use Nuxt and Firebase full potentials: nuxt ssr (universal mode) with firebase functions.  
