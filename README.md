@@ -1,6 +1,6 @@
 # nuxt-spa
 
-The easiest way to create and deploy to firebase a nuxt app
+The easiest way to create and deploy to firebase a nuxt app in spa mode (single page application)
 
 # Requirements
 - A Firebase project
